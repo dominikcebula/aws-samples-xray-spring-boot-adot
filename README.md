@@ -18,6 +18,33 @@ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/
 aws eks create-addon --addon-name adot --cluster-name cluster-01
 ```
 
+3. Create Service Account for Otel Collector
+
+```shell
+eksctl utils associate-iam-oidc-provider \
+  --region=eu-central-1 \
+  --cluster=cluster-01 \
+  --approve
+```
+
+```shell
+eksctl create iamserviceaccount \
+    --name adot-collector \
+    --namespace default \
+    --cluster cluster-01 \
+    --region eu-central-1 \
+    --attach-policy-arn arn:aws:iam::aws:policy/AWSXrayWriteOnlyAccess \
+    --attach-policy-arn arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy \
+    --approve \
+    --override-existing-serviceaccounts
+```
+
+4. Install Collector Configuration
+
+```shell
+kubectl apply -f deployment/02-collector-config-xray.yaml
+```
+
 ## References
 
 * https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/requirements
