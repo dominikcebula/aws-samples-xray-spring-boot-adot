@@ -3,13 +3,13 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: cluster-03
+  name: cluster-01
   region: eu-central-1
   version: "1.29"
 
 nodeGroups:
   - name: ng-1
-    instanceType: t2.nano
+    instanceType: t3.medium
     desiredCapacity: 1
     minSize: 1
     maxSize: 1
