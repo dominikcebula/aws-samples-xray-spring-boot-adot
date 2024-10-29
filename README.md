@@ -39,10 +39,16 @@ eksctl create iamserviceaccount \
     --override-existing-serviceaccounts
 ```
 
-4. Install Collector Configuration
+4. Apply Collector Configuration
 
 ```shell
 kubectl apply -f deployment/02-collector-config-xray.yaml
+```
+
+5. Apply Instrumentation Configuration
+
+```shell
+kubectl apply -f deployment/03-instrumentation-config.yaml
 ```
 
 ## References
@@ -51,3 +57,6 @@ kubectl apply -f deployment/02-collector-config-xray.yaml
 * https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/installation
 * https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/config-xray
 * https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/config-auto-instrumentation
+* https://aws-otel.github.io/docs/getting-started/java-sdk/auto-instr#running-the-agent-in-docker
+* https://medium.com/@singhchaya269/deploying-aws-distro-for-opentelemetry-adot-collector-for-x-ray-enhanced-tracing-and-monitoring-9ea4efb900fc
+* https://catalog.us-east-1.prod.workshops.aws/workshops/31676d37-bbe9-4992-9cd1-ceae13c5116c/en-US/aws-managed-oss/adot/javawalkthrough
