@@ -2,7 +2,7 @@
 
 ## Introduction
 
-AWS X-Ray setup with sample Spring Boot Application
+This repository contains AWS X-Ray setup with sample Spring Boot Application.
 
 ## AWS X-Ray Configuration
 
@@ -60,3 +60,11 @@ kubectl apply -f deployment/03-instrumentation-config.yaml
 * https://aws-otel.github.io/docs/getting-started/java-sdk/auto-instr#running-the-agent-in-docker
 * https://medium.com/@singhchaya269/deploying-aws-distro-for-opentelemetry-adot-collector-for-x-ray-enhanced-tracing-and-monitoring-9ea4efb900fc
 * https://catalog.us-east-1.prod.workshops.aws/workshops/31676d37-bbe9-4992-9cd1-ceae13c5116c/en-US/aws-managed-oss/adot/javawalkthrough
+
+## Author
+
+Dominik Cebula
+
+* https://dominikcebula.com/
+* https://blog.dominikcebula.com/
+* https://www.udemy.com/user/dominik-cebula/
