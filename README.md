@@ -54,7 +54,7 @@ kubectl apply -f deployment/03-instrumentation-config.yaml
 ## References
 
 * https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/requirements
-* https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/installation
+* https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/installation#aws-cli
 * https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/config-xray
 * https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/config-auto-instrumentation
 * https://aws-otel.github.io/docs/getting-started/java-sdk/auto-instr#running-the-agent-in-docker
