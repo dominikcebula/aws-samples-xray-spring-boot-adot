@@ -3,7 +3,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: cluster-02
+  name: cluster-03
   region: eu-central-1
   version: "1.29"
 

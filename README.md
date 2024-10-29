@@ -17,3 +17,10 @@ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/
 ```shell
 aws eks create-addon --addon-name adot --cluster-name cluster-01
 ```
+
+## References
+
+* https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/requirements
+* https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/installation
+* https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/config-xray
+* https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/config-auto-instrumentation
